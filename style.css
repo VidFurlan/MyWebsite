@@ -12,8 +12,9 @@
 
     color: var(--color-1);
 
-    box-sizing: border-box;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    
 }
 
 body {
@@ -71,19 +72,26 @@ body {
 }
 
 .menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 720px;
     margin: 0 auto;
     margin-top: 0;
     height: 50px;
     list-style: none;
+
+    background-color: var(--color-4);
 }
   
 .menu li {
+    padding-top: 10px;
     width: 125px;
     height: 50px;
     transition: background-position-x 0.9s linear;
     text-align: center;
+    margin-top: 10px;
 }  
